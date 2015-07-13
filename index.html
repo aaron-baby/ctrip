@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/index.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,31 +18,44 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="container">
-      <h1>酷游指南</h1>
-      <h2>Cool Trip Guide</h2>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">酷游指南</a>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">平台 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">机票</a></li>
-              <li><a href="#">酒店</a></li>
-              <li><a href="#">折扣</a></li>
-            </ul>
-          </div>
+  <body data-spy="scroll" data-target="#navbar-example">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <h2>Cool Trip Guide</h2>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">酷游指南</a>
         </div>
-      </nav>
+        <div class="collapse navbar-collapse" id="navbar-example">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#navbar-platform">平台 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#navbar-flight">机票</a></li>
+            <li><a href="#navbar-hotel">酒店</a></li>
+            <li><a href="#">折扣</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 id="navbar-platform">平台</h2>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="static/qyer.jpg" alt="..." class="img-thumbnail">
+          <h3>穷游网</h3>
+          <p>穷游网,旅行指南,攻略,游记,出境游,自助游</p>
+        </div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+      </div>
+      <h2 id="navbar-flight">机票</h2>
       <div class="row">
         <div class="col-md-2">
           <img src="..." alt="..." class="img-thumbnail">
@@ -55,7 +69,7 @@
         <div class="col-md-2">.col-md-2</div>
         <div class="col-md-2">.col-md-2</div>
       </div>
-      <h2 id="navbar-brand-image">机票</h2>
+      <h2 id="navbar-hotel">酒店</h2>
       <div class="row">
         <div class="col-md-2">
           <img src="..." alt="..." class="img-thumbnail">
