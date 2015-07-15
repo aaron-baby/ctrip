@@ -2,3 +2,12 @@ body{
   position: relative;
   padding-top: 100px;
 }
+.container .col-md-3{
+  text-align: center;
+}
+.col-md-3 img{
+  cursor: pointer;
+}
+.img-container{
+  height: 80px;
+}

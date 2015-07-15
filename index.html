@@ -44,16 +44,24 @@
     <div class="container">
       <h2 id="navbar-platform">平台</h2>
       <div class="row">
-        <div class="col-md-2">
-          <img src="static/qyer.jpg" alt="..." class="img-thumbnail">
+        <div class="col-md-3">
+          <div class="img-container">
+            <img src="static/qyer.jpg" alt="穷游网" class="img-thumbnail">
+          </div>
           <h3>穷游网</h3>
           <p>穷游网,旅行指南,攻略,游记,出境游,自助游</p>
+          <p><a class="btn btn-default" href="http://www.qyer.com/?utm_source=ctrip.club" role="button" target="_blank">访问 »</a></p>
         </div>
-        <div class="col-md-2">.col-md-2</div>
-        <div class="col-md-2">.col-md-2</div>
-        <div class="col-md-2">.col-md-2</div>
-        <div class="col-md-2">.col-md-2</div>
-        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-3">
+          <div class="img-container">
+            <img src="static/mafengwo.png" alt="蚂蜂窝" class="img-thumbnail">
+          </div>
+          <h3>蚂蜂窝</h3>
+          <p>蚂蜂窝!靠谱的旅游攻略,最佳的自由行,自助游分享社区</p>
+          <p><a class="btn btn-default" href="http://www.mafengwo.cn/?utm_source=ctrip.club" role="button" target="_blank">访问 »</a></p>
+        </div>
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-3">.col-md-3</div>
       </div>
       <h2 id="navbar-flight">机票</h2>
       <div class="row">
@@ -88,5 +96,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.col-md-3 img').click(function(){
+        var link = $(this).parent().find('a').attr('href');
+        open(link, '', '');
+      });
+    </script>
   </body>
 </html>
